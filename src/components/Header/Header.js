@@ -30,7 +30,10 @@ const Header = () => {
             >
               How it works
             </li>
-            <li className="header__nav-list-link header__nav-list-cta">
+            <li
+              className="header__nav-list-link header__nav-list-cta"
+              onClick={() => navigate(`/form`)}
+            >
               TRY IT!
             </li>
           </ul>
@@ -56,7 +59,10 @@ const Header = () => {
               >
                 How it works
               </li>
-              <li className="stickyNAv-list-link stickyNAv-list-cta">
+              <li
+                className="stickyNAv-list-link stickyNAv-list-cta"
+                onClick={() => navigate(`/form`)}
+              >
                 TRY IT!
               </li>
             </ul>

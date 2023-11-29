@@ -1,4 +1,5 @@
 import './Hero.scss';
+import { Link, useNavigate } from 'react-router-dom';
 import personImg1 from '../../assets/img/customers/customer-1.jpg';
 import personImg2 from '../../assets/img/customers/customer-2.jpg';
 import personImg3 from '../../assets/img/customers/customer-3.jpg';
@@ -8,6 +9,8 @@ import personImg6 from '../../assets/img/customers/customer-6.jpg';
 import heroImg from '../../assets/img/hero.png';
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <section className="heroBack">
@@ -21,7 +24,9 @@ const Hero = () => {
               ingerediant meal. Tailored to your personal tastes and nutritional
               needs.
             </p>
-            <p className="hero__btn">Start making your list</p>
+            <p className="hero__btn" onClick={() => navigate(`/form`)}>
+              Start making your list
+            </p>
 
             <div className="hero__delivered">
               <div className="hero__delivered-imgs">
