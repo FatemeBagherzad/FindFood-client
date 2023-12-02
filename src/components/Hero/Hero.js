@@ -37,7 +37,7 @@ const Hero = () => {
                 <img src={personImg5} alt="Customer photo" />
                 <img src={personImg6} alt="Customer photo" />
               </div>
-              <p class="hero__delivered-text">
+              <p className="hero__delivered-text">
                 <span>250,000+</span> meals delivered last year!
               </p>
             </div>

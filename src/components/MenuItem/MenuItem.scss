@@ -1,0 +1,32 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/globals' as *;
+
+.menuItem {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  background-color: white;
+  border-radius: 3rem;
+  margin: 0.3rem 0;
+  &__txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 3rem;
+    &-ing,
+    &-price {
+      font-size: 1.4rem;
+      line-height: 1.8;
+    }
+    &-price {
+      align-self: flex-end;
+    }
+  }
+
+  &__img {
+    &-img {
+      width: 100%;
+      border-radius: 0 3rem 3rem 0;
+    }
+  }
+}

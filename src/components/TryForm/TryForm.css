@@ -85,10 +85,9 @@ hr {
 .tryForm {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  background-color: #e67e22;
+  background-color: white;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 11px;
-  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
   overflow: hidden;
 }
 .tryForm-list {
@@ -118,37 +117,83 @@ hr {
   line-height: 1.8;
   margin-bottom: 4.8rem;
 }
-.tryForm-list-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.tryForm-list-form-div {
-  color: #45260a;
-  font-size: 1.8rem;
-}
-.tryForm-list-form-div input[type=checkbox] {
-  width: 20px;
-  height: 20px;
-  outline: none;
-  border-radius: 50%;
-}
-.tryForm-list-form-submit {
-  padding: 1.2rem 2.4rem;
-  border-radius: 9px;
-  color: #fff;
-  background-color: #45260a;
-  border: none;
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-top: 5rem;
-}
-.tryForm-list-form-submit:hover {
-  background-color: #fff;
-  color: #45260a;
-}
 .tryForm-imgbox {
   background-image: linear-gradient(to right bottom, rgba(235, 151, 78, 0.35), rgba(230, 125, 34, 0.35)), url("../../assets/img/eating.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.preferences {
+  border: 0.0625rem black solid;
+  height: 10rem;
+  text-align: center;
+  padding: 0.4rem 0;
+  width: 40%;
+  margin-right: 1rem;
+  list-style: none;
+}
+.preferences__form {
+  display: flex;
+  justify-content: center;
+}
+.preferences__container {
+  display: flex;
+  justify-content: center;
+}
+.preferences__label {
+  border: 1px solid black;
+  border-bottom: none;
+  border-radius: 0.3rem;
+  margin-right: 0.1rem;
+  padding: 0.2rem 1rem;
+}
+.preferences__list--clear {
+  background-color: transparent;
+  border: none;
+}
+.preferences__input {
+  margin-top: 0.1rem;
+  width: 100%;
+}
+.preferences__btn {
+  width: 3rem;
+  border-radius: 0.5rem;
+  margin-top: 0.2rem;
+  float: right;
+}
+
+.border {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  width: 40%;
+  margin-right: 1rem;
+  text-align: center;
+}
+
+.restriction__container {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+h4 {
+  margin: 0;
+}
+
+#prefer {
+  background-color: green;
+  border-color: green;
+}
+
+#avoid {
+  background-color: red;
+  border-color: red;
+}
+
+.selected__tab {
+  background-color: lightblue;
 }
