@@ -44,6 +44,7 @@ function Preferences() {
     return (
         <div>
             <h1>Select Preferences</h1>
+            <button className='preferences__menu--btn'>Menu</button>
             <form className='preferences__form'>
                 <div>
                     <div>
@@ -62,7 +63,7 @@ function Preferences() {
                     </div>
                         <input
                             className='preferences__input'
-                            placeholder='Search'
+                            placeholder='Add Preferencesgit '
                             value={inputContent}
                             onChange={(e) => setInputContent(e.target.value)}
                         />
@@ -70,11 +71,11 @@ function Preferences() {
                 </div>
             </form>
             <h1>Preferences</h1>
-            <div className='preferences__container'>
+            <div id='preferences__left' className='preferences__container'>
                 <ul id='prefer' className='preferences'>
                     <h4>Prefer</h4>
                     {preferContent.map((item, index) => (
-                    <li key={index}>
+                    <li className='preferences__list' key={index}>
                         <button className='preferences__list--clear' type="button" onClick={() => handleRemove(item)}>x</button>
                         {item}
                     </li>
@@ -84,7 +85,7 @@ function Preferences() {
                 <ul id='avoid' className='preferences'>
                     <h4>Avoid</h4>
                     {avoidContent.map((item, index) => (
-                    <li key={index}>
+                    <li className='preferences__list' key={index}>
                         <button className='preferences__list--clear' type="button" onClick={() => handleRemove(item)}>x</button>
                         {item}
                         </li>
@@ -94,7 +95,7 @@ function Preferences() {
             </div>
             <div className='preferences__btn'>
                 <button className='preferences__clear-all' type="button" onClick={handleClearAll}>Clear All</button>
-                <button>Menu</button>
+                
             </div>
         </div>
     );
