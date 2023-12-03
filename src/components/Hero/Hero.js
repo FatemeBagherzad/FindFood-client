@@ -1,5 +1,5 @@
 import './Hero.scss';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import personImg1 from '../../assets/img/customers/customer-1.jpg';
 import personImg2 from '../../assets/img/customers/customer-2.jpg';
 import personImg3 from '../../assets/img/customers/customer-3.jpg';
@@ -24,18 +24,18 @@ const Hero = () => {
               ingerediant meal. Tailored to your personal tastes and nutritional
               needs.
             </p>
-            <p className="hero__btn" onClick={() => navigate(`/form`)}>
+            <p className="btn" onClick={() => navigate(`/form`)}>
               Start making your list
             </p>
 
             <div className="hero__delivered">
               <div className="hero__delivered-imgs">
-                <img src={personImg1} alt="Customer photo" />
-                <img src={personImg2} alt="Customer photo" />
-                <img src={personImg3} alt="Customer photo" />
-                <img src={personImg4} alt="Customer photo" />
-                <img src={personImg5} alt="Customer photo" />
-                <img src={personImg6} alt="Customer photo" />
+                <img src={personImg1} alt="Customer" />
+                <img src={personImg2} alt="Customer" />
+                <img src={personImg3} alt="Customer" />
+                <img src={personImg4} alt="Customer" />
+                <img src={personImg5} alt="Customer" />
+                <img src={personImg6} alt="Customer" />
               </div>
               <p className="hero__delivered-text">
                 <span>250,000+</span> meals delivered last year!

@@ -8,7 +8,7 @@ const TryItPage = () => {
 
   useEffect(() => {
     axios.get('http://localhost:8888/menu').then((response) => {
-      console.log(response.data);
+      // console.log(response.data);
       setMenu(response.data);
     });
   }, []);

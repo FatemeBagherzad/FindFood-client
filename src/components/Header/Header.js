@@ -1,4 +1,4 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './Header.scss';
 import logo from '../../assets/img/findfood-logo.png';
 import menu from '../../assets/Icons/menu.png';
@@ -24,6 +24,9 @@ const Header = () => {
 
         <nav className="header__nav">
           <ul className="header__nav-list">
+            <li className="header__nav-list-link" onClick={() => navigate(`/`)}>
+              Home
+            </li>
             <li
               className="header__nav-list-link"
               onClick={() => navigate(`/how`)}
@@ -31,9 +34,12 @@ const Header = () => {
               How it works
             </li>
             <li
-              className="header__nav-list-link header__nav-list-cta"
-              onClick={() => navigate(`/form`)}
+              className="header__nav-list-link"
+              onClick={() => navigate(`/menu`)}
             >
+              Menu
+            </li>
+            <li className="btn" onClick={() => navigate(`/form`)}>
               TRY IT!
             </li>
           </ul>
@@ -54,14 +60,38 @@ const Header = () => {
 
             <ul className="stickyNAv-list">
               <li
-                claclassNamess="stickyNAv-list-link"
-                onClick={() => navigate(`/how`)}
+                className="stickyNAv-list-link"
+                onClick={() => {
+                  navigate(`/`);
+                  setMenu(!menuList);
+                }}
+              >
+                Home
+              </li>
+              <li
+                className="stickyNAv-list-link"
+                onClick={() => {
+                  navigate(`/how`);
+                  setMenu(!menuList);
+                }}
               >
                 How it works
               </li>
               <li
-                className="stickyNAv-list-link stickyNAv-list-cta"
-                onClick={() => navigate(`/form`)}
+                className="stickyNAv-list-link"
+                onClick={() => {
+                  navigate(`/menu`);
+                  setMenu(!menuList);
+                }}
+              >
+                Menu
+              </li>
+              <li
+                className="btn"
+                onClick={() => {
+                  navigate(`/form`);
+                  setMenu(!menuList);
+                }}
               >
                 TRY IT!
               </li>

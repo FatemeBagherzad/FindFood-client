@@ -6,6 +6,7 @@
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0;
 }
+
 .hero {
   // max-width: 130rem;
   // margin: 0 auto;
@@ -29,27 +30,13 @@
     }
   }
   &__heading {
-    font-size: 3rem;
+    font-size: 2.8rem;
     line-height: 1.6;
     margin-bottom: 2rem;
   }
   &__desc {
-    font-size: 2rem;
     line-height: 1.6;
     margin-bottom: 4.8rem;
-  }
-  &__btn {
-    padding: 1.2rem 2.4rem;
-    border-radius: 9px;
-    color: #fff;
-    background-color: #e67e22;
-    font-size: 2rem;
-    width: fit-content;
-    &:hover {
-      background-color: #cf711f;
-      color: #fff;
-      cursor: pointer;
-    }
   }
   &__delivered {
     display: flex;
@@ -67,7 +54,6 @@
       }
     }
     &-text {
-      font-size: 1.8rem;
       font-weight: 600;
       & span {
         color: #cf711f;

@@ -9,7 +9,7 @@ const Steps = () => {
       <section className="stepPage container">
         <span className="stepPage-span">How it works</span>
         <h2 className="stepPage-heading">
-          Your dose of health in 3 simple steps
+          Your favorite dish in 3 simple steps
         </h2>
 
         <div className="steps">
@@ -21,9 +21,9 @@ const Steps = () => {
               </h3>
               <p className="steps__step-text-p">
                 Never again waste time thinking about what to eat! Findfood AI
-                will create a 100% personalized meal plan just for you. It makes
-                sure you get all the nutrients and vitamins you need, no matter
-                what diet you follow!
+                will find a meal with your prefrenses. It makes sure you get
+                what you prefer or what you avoid, no matter what diet you
+                follow!
               </p>
             </div>
 
@@ -39,11 +39,9 @@ const Steps = () => {
           <div className="steps__step">
             <div className="steps__step-text">
               <p className="steps__step-text-no">02</p>
-              <h3 className="steps__step-text-h">Approve your meal</h3>
+              <h3 className="steps__step-text-h">Check your list</h3>
               <p className="steps__step-text-p">
-                Approve the meal generated for you by Findfood AI. You can
-                change ingredients, swap entire meals, or even add your own
-                recipes.
+                Check your prefrences on the list and press filter button.
               </p>
             </div>
 
@@ -60,11 +58,11 @@ const Steps = () => {
             <div className="steps__step-text">
               <p className="steps__step-text-no">03</p>
               <h3 className="steps__step-text-h">
-                Receive meals at convenient time
+                Choose one of the suggestions filtered for you
               </h3>
               <p className="steps__step-text-p">
-                We will find best and closest restaurant for you to have your
-                meal as soon as possible.
+                Click one of the meal on the list filtered for you by Findfood
+                AI.
               </p>
             </div>
 
