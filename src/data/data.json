@@ -1,0 +1,394 @@
+[
+  {
+    "category": "Cold Dishes",
+    "name": "Jinseviche",
+    "Ingredient": [
+      "Sake",
+      "una tataki",
+      "tako",
+      "ebi",
+      "mango",
+      "cucumber",
+      "red onion",
+      "cilantro",
+      "wakamezu."
+    ],
+    "price": "16.0 USD"
+  },
+  {
+    "category": "Cold Dishes",
+    "name": "Kadoma Tuna",
+    "Ingredient": [
+      "Spicy tuna tartare",
+      "tempura rice cake",
+      "avocado",
+      "jalapeno",
+      "tobiko",
+      "sesame seeds",
+      "eel sauce."
+    ],
+    "price": "17.0 USD"
+  },
+  {
+    "category": "Cold Dishes",
+    "name": "PokÃ©",
+    "Ingredient": [
+      "Tuna",
+      "Avocado",
+      "Cucumber",
+      "Tomato",
+      "Cilantro",
+      "Scallions",
+      "Spicy sesame",
+      "Ponzu sauce",
+      "Served on endive"
+    ],
+    "price": "16.0 USD"
+  },
+  {
+    "category": "Cold Dishes",
+    "name": "Somatsu",
+    "Ingredient": [
+      "Tuna",
+      "Avocado",
+      "Asparagus",
+      "Mint",
+      "Yamagobo",
+      "Cithai sauce",
+      "Wrapped with cucumber"
+    ],
+    "price": "16.0 USD"
+  },
+  {
+    "category": "Cold Dishes",
+    "name": "Yellowtail Serrano",
+    "Ingredient": ["Gluten free", "Hamachi", "Serrano", "Cilantro", "Yuzu soy"],
+    "price": "19.0 USD"
+  },
+  {
+    "category": "Cold Dishes",
+    "name": "Hamachi Fig",
+    "Ingredient": [
+      "Hamachi sashimi",
+      "Lightly tossed in a fig sauce",
+      "With rum raisins",
+      "And serrano peppers",
+      "Topped with fried lotus root"
+    ],
+    "price": "16.0 USD"
+  },
+  {
+    "category": "Cold Dishes",
+    "name": "Maguro Ringo",
+    "Ingredient": [
+      "Maguro",
+      "Tossed in anchovy sauce",
+      "Served with sliced honey crisp apples",
+      "Garnished with goat cheese"
+    ],
+    "price": "16.0 USD"
+  },
+  {
+    "category": "Hot Dishes",
+    "name": "Grouper Buns",
+    "Ingredient": [
+      "Tempura grouper",
+      "Asian slaw",
+      "Served with crispy lotus root"
+    ],
+    "price": "19.0 USD"
+  },
+  {
+    "category": "Hot Dishes",
+    "name": "Hamachi Kama",
+    "Ingredient": [
+      "Lightly seasoned hamachi collar",
+      "Baked and broiled",
+      "Served with ponzu"
+    ],
+    "price": "21.0 USD"
+  },
+  {
+    "category": "Hot Dishes",
+    "name": "Beef Sliders",
+    "Ingredient": [
+      "Lettuce",
+      "Mayo",
+      "Tonkatsu sauce",
+      "Served with tempura sweet potato fries"
+    ],
+    "price": "19.0 USD"
+  },
+  {
+    "category": "Hot Dishes",
+    "name": "Beef Wrapped Asparagus",
+    "Ingredient": ["Kobe beef", "Asparagus", "Japanese BBQ sauce"],
+    "price": "19.0 USD"
+  },
+  {
+    "category": "Hot Dishes",
+    "name": "Tebasaki Wings",
+    "Ingredient": [
+      "Twice fried wings",
+      "Tossed in a savory sesame ginger sauce"
+    ],
+    "price": "13.0 USD"
+  },
+  {
+    "category": "Hot Dishes",
+    "name": "Tochiru Buns",
+    "Ingredient": [
+      "Kobe flank steak",
+      "Iceberg lettuce",
+      "Mayo",
+      "Caramelized onions",
+      "Served with crispy lotus root"
+    ],
+    "price": "19.0 USD"
+  },
+  {
+    "category": "Hot Dishes",
+    "name": "Nikko",
+    "Ingredient": [
+      "Smoked Salmon",
+      "Unagi",
+      "Tamago",
+      "Asparagus",
+      "Avocado",
+      "Cream cheese",
+      "Tempura fried",
+      "Topped with eel sauce"
+    ],
+    "price": "16.0 USD"
+  },
+  {
+    "category": "Sushi",
+    "name": "Hatsu",
+    "Ingredient": [
+      "Beef",
+      "Hot sesame",
+      "Olive oil",
+      "Ginger",
+      "Avocado",
+      "Cucumber scallions",
+      "Cilantro",
+      "Topped with Japanese bbq sauce and sriracha"
+    ],
+    "price": "19.0 USD"
+  },
+  {
+    "category": "Sushi",
+    "name": "Jarijari",
+    "Ingredient": [
+      "Tempura shrimp",
+      "Kani",
+      "Avocado",
+      "Cucumber",
+      "Yamagobo",
+      "Tempura flakes",
+      "Eel sauce"
+    ],
+    "price": "16.0 USD"
+  },
+  {
+    "category": "Sushi",
+    "name": "Jinsei Special",
+    "Ingredient": [
+      "Maguro",
+      "Hamachi",
+      "Masago",
+      "Jalapeno",
+      "Cilantro",
+      "Cucumber",
+      "Avocado"
+    ],
+    "price": "15.0 USD"
+  },
+  {
+    "category": "Sushi",
+    "name": "Lobster",
+    "Ingredient": [
+      "Tempura lobster",
+      "Masago",
+      "Tempura asparagus",
+      "Cucumber",
+      "Avocado",
+      "Eel sauce"
+    ],
+    "price": "19.0 USD"
+  },
+  {
+    "category": "Sushi",
+    "name": "Sachihoko",
+    "Ingredient": [
+      "Tempura shrimp",
+      "Kani",
+      "Avocado",
+      "Cucumber",
+      "Yamagobo",
+      "Unagi",
+      "Tobiko",
+      "Eel sauce"
+    ],
+    "price": "17.0 USD"
+  },
+  {
+    "category": "Sushi",
+    "name": "Spicy Hotate",
+    "Ingredient": [
+      "Spicy scallop",
+      "Avocado",
+      "Crab salad",
+      "Tobiko",
+      "Tempura flakes",
+      "Eel sauce",
+      "Sriracha"
+    ],
+    "price": "17.0 USD"
+  },
+  {
+    "category": "Sushi",
+    "name": "Suteki",
+    "Ingredient": [
+      "Smoked salmon",
+      "Avocado",
+      "Cream cheese",
+      "Honey crisp apple",
+      "Squid ink tobiko",
+      "Soy-mirin"
+    ],
+    "price": "16.0 USD"
+  },
+  {
+    "category": "Sushi",
+    "name": "Bangkok",
+    "Ingredient": [
+      "Maguro",
+      "Hamachi",
+      "Jalapeno",
+      "Cilantro",
+      "Avocado",
+      "Potato matchsticks",
+      "Sweet and spicy Thai sauce"
+    ],
+    "price": "16.0 USD"
+  },
+  {
+    "category": "Sushi",
+    "name": "Bubblegum",
+    "Ingredient": [
+      "Tempura shrimp",
+      "Maguro",
+      "Ebi",
+      "Avocado",
+      "Wasabi aioli",
+      "Sriracha"
+    ],
+    "price": "16.0 USD"
+  },
+  {
+    "category": "Sushi",
+    "name": "Ginger Albacore",
+    "Ingredient": [
+      "Maguro",
+      "Hamachi",
+      "Jalapeno",
+      "Cilantro",
+      "Topped with avocado and ginger albacore",
+      "Scallions",
+      "Ponzu sauce"
+    ],
+    "price": "16.0 USD"
+  },
+  {
+    "category": "Sushi",
+    "name": "Hamajiku",
+    "Ingredient": [
+      "Hamachi",
+      "Avocado",
+      "Cucumber",
+      "Rum raisins",
+      "Crispy lotus root",
+      "Fig sauce",
+      "Serrano"
+    ],
+    "price": "16.0 USD"
+  },
+  {
+    "category": "Sushi",
+    "name": "Island",
+    "Ingredient": [
+      "Japanese red snapper",
+      "Avocado",
+      "Asparagus",
+      "Mango",
+      "Wasabi tobiko",
+      "Sriracha",
+      "Gluten-free"
+    ],
+    "price": "16.0 USD"
+  },
+  {
+    "category": "Sushi",
+    "name": "Jinsei Special",
+    "Ingredient": [
+      "Maguro",
+      "Hamachi",
+      "Masago",
+      "Jalapeno",
+      "Cilantro",
+      "Cucumber",
+      "Avocado"
+    ],
+    "price": "16.0 USD"
+  },
+  {
+    "category": "Sushi",
+    "name": "Kiiro",
+    "Ingredient": [
+      "Salmon",
+      "Avocado",
+      "Cucumber",
+      "Topped with octopus, squid, golden tobiko",
+      "Wasabi sauce"
+    ],
+    "price": "16.0 USD"
+  },
+  {
+    "category": "Sushi",
+    "name": "Red Dragon",
+    "Ingredient": [
+      "Spicy tuna tartare",
+      "Tuna tataki",
+      "Cucumber",
+      "Scallions",
+      "Sesame dressing"
+    ],
+    "price": "16.0 USD"
+  },
+  {
+    "category": "Sushi",
+    "name": "Red Spider",
+    "Ingredient": [
+      "Tempura soft shell crab",
+      "Tobiko",
+      "Cucumber",
+      "Avocado",
+      "Eel sauce"
+    ],
+    "price": "16.0 USD"
+  },
+  {
+    "category": "Sushi",
+    "name": "Spiro Roll",
+    "Ingredient": [
+      "Spicy tuna tartare",
+      "Sake",
+      "Tempura asparagus",
+      "Avocado",
+      "Spicy aioli",
+      "Chili powder"
+    ],
+    "price": "16.0 USD"
+  }
+]

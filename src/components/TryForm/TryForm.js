@@ -1,33 +1,86 @@
-import './TryForm.scss';
-import { useState } from 'react';
-import Menu from '../Menu/Menu';
+import "./TryForm.scss";
+// import { useState } from "react";
+import Menu from "../Menu/Menu";
+import RecipeFilter from "../RecipeFilter/RecipeFilter";
+import RecipeList from "../RecipeList/RecipeList";
+import Recipes from "../../components/Recipes/Recipes";
+import Filter from "../../components/Filter/Filter";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
-const TryForm = ({ menu }) => {
+const TryForm = ({ menu, selectedFilter, setSelectedFilter }) => {
   // const [data, setData] = useState();
-  const [activeTab, setActiveTab] = useState('prefer');
-  const [inputContent, setInputContent] = useState('');
+  const [activeTab, setActiveTab] = useState("prefer");
+  const [inputContent, setInputContent] = useState("");
   const [preferContent, setPreferContent] = useState([]);
   const [avoidContent, setAvoidContent] = useState([]);
+  const [recipeData, setRecipeData] = useState([]);
+  const [filteredRecipes, setFilteredRecipes] = useState([]);
+  const [searchResults, setSearchResults] = useState([]);
+  const [filters, setFilters] = useState({
+    name: "",
+    category: "",
+    ingredient: "",
+  });
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(
+          "http://localhost:8888/FindFood-server/dev-data/data/data.json"
+        );
+        setRecipeData(response.data);
+        setFilteredRecipes(response.data);
+        setSearchResults([]);
+      } catch (error) {
+        console.error("Error fetching data:", error.message);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  const handleFilterChange = (newFilters) => {
+    setFilters(newFilters);
+  };
+
+  useEffect(() => {
+    // Apply filters to recipes when filters change
+    const filtered = recipeData.filter((recipe) => {
+      const nameMatch = recipe.name
+        .toLowerCase()
+        .includes(filters.name.toLowerCase());
+      const categoryMatch = recipe.category
+        .toLowerCase()
+        .includes(filters.category.toLowerCase());
+      const ingredientMatch = recipe.Ingredient.toLowerCase().includes(
+        filters.ingredient.toLowerCase()
+      );
+      return nameMatch && categoryMatch && ingredientMatch;
+    });
+
+    setFilteredRecipes(filtered);
+  }, [recipeData, filters]);
 
   const handleTabChange = (tab) => {
     setActiveTab(tab);
   };
   const handleAdd = () => {
-    if (inputContent.trim() === '') {
+    if (inputContent.trim() === "") {
       return;
     }
 
-    if (activeTab === 'prefer') {
+    if (activeTab === "prefer") {
       setPreferContent([...preferContent, inputContent]);
     } else {
       setAvoidContent([...avoidContent, inputContent]);
     }
 
-    setInputContent('');
+    setInputContent("");
   };
 
   const handleRemove = (itemToRemove) => {
-    if (activeTab === 'prefer') {
+    if (activeTab === "prefer") {
       setPreferContent(preferContent.filter((item) => item !== itemToRemove));
     } else {
       setAvoidContent(avoidContent.filter((item) => item !== itemToRemove));
@@ -49,17 +102,17 @@ const TryForm = ({ menu }) => {
               <div>
                 <label
                   className={`preferences__label ${
-                    activeTab === 'prefer' ? 'selected__tab' : ''
+                    activeTab === "prefer" ? "selected__tab" : ""
                   }`}
-                  onClick={() => handleTabChange('prefer')}
+                  onClick={() => handleTabChange("prefer")}
                 >
                   Prefer
                 </label>
                 <label
                   className={`preferences__label ${
-                    activeTab === 'avoid' ? 'selected__tab' : ''
+                    activeTab === "avoid" ? "selected__tab" : ""
                   }`}
-                  onClick={() => handleTabChange('avoid')}
+                  onClick={() => handleTabChange("avoid")}
                 >
                   Avoid
                 </label>
@@ -79,7 +132,8 @@ const TryForm = ({ menu }) => {
               </button>
             </div>
           </form>
-
+          <Filter onFilterChange={handleFilterChange} />
+          <Recipes recipes={filteredRecipes} />
           <h1>Preferences</h1>
           <div className="preferences__container">
             <ul id="prefer" className="preferences">
@@ -115,6 +169,16 @@ const TryForm = ({ menu }) => {
           </div>
 
           {/* End of Justin code */}
+          <div>
+            {/* Pass selectedFilter and setSelectedFilter to RecipeFilter */}
+            <RecipeFilter
+              menu={menu}
+              selectedFilter={selectedFilter}
+              setSelectedFilter={setSelectedFilter}
+            />
+            <RecipeList menu={menu} selectedFilter={selectedFilter} />
+          </div>
+          {/* End of Aung code */}
         </div>
         <div className="tryForm-imgbox"></div>
       </section>
