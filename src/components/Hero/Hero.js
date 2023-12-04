@@ -17,7 +17,7 @@ const Hero = () => {
         <div className="hero container">
           <div className="hero__text">
             <h2 className="hero__heading">
-              A healthy meal delivered to your door, every single day
+              Select your favorite ingredient and enjoy your meal
             </h2>
             <p className="hero__desc">
               The smart food subscription that will make you enjoy your chosen
