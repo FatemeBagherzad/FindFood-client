@@ -25,8 +25,9 @@ html {
 
 body {
   font-family: "Rubik", sans-serif;
-  line-height: 1;
+  font-size: 1.8rem;
   font-weight: 400;
+  line-height: 1;
   color: #555;
 }
 
@@ -61,25 +62,19 @@ hr {
 }
 
 .btn {
-  padding: 1.6rem 3.2rem;
-  font-size: 1rem;
-  font-weight: 700;
   color: #fafafa;
   background-color: #e67e22;
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border: none;
   border-radius: 9px;
-  position: relative;
 }
 .btn:hover {
   cursor: pointer;
   background-color: #cf711f;
-}
-.btn-icon {
-  position: absolute;
-  left: 0.5rem;
 }
 
 .header {
@@ -88,8 +83,13 @@ hr {
   align-items: center;
   background-color: #fdf2e9;
   height: 9.6rem;
-  padding: 0 4.8rem;
+  padding: 0 1rem;
   position: relative;
+}
+@media screen and (min-width: 1280px) {
+  .header {
+    padding: 0 4.8rem;
+  }
 }
 .header__logo {
   height: 2.2rem;
@@ -109,29 +109,37 @@ hr {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 4.8rem;
+    gap: 1.5rem;
   }
   .header__nav-list-link {
     text-decoration: none;
     color: #333;
-    font-weight: 500;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     transition: all 0.3s;
   }
   .header__nav-list-link:hover {
     color: #cf711f;
     cursor: pointer;
   }
-  .header__nav-list-cta {
-    padding: 1.2rem 2.4rem;
+  .header__nav-list-cartLink {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    padding: 0.2rem 2rem;
+  }
+  .header__nav-list-cartLink:hover {
+    border: 1px solid #333;
     border-radius: 9px;
-    color: #fff;
-    background-color: #e67e22;
   }
-  .header__nav-list-cta:hover {
-    background-color: #cf711f;
-    color: #fff;
+  .header__nav-list-cartLink-cart {
+    width: 3rem;
+    height: auto;
   }
+}
+.header__mobileIcn {
+  background-color: transparent;
+  border: none;
 }
 @media screen and (min-width: 768px) {
   .header__mobileIcn {
@@ -139,11 +147,13 @@ hr {
   }
 }
 .header__mobileIcn-menu {
-  cursor: pointer;
-  width: 30px;
+  background-color: transparent;
+  width: 40px;
   height: 30px;
   border: none;
-  background: none;
+}
+.header__mobileIcn-menu:hover {
+  cursor: pointer;
 }
 
 .stickyNAv {
@@ -154,7 +164,7 @@ hr {
   height: -moz-fit-content;
   height: fit-content;
   padding: 2rem;
-  background-color: rgba(255, 255, 255, 0.795);
+  background-color: rgba(255, 255, 255, 0.909);
   z-index: 999;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
 }
@@ -169,8 +179,6 @@ hr {
 .stickyNAv-list-link {
   text-decoration: none;
   color: #333;
-  font-weight: 500;
-  font-size: 1.8rem;
   transition: all 0.3s;
 }
 .stickyNAv-list-link:hover {

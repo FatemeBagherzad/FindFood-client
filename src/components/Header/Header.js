@@ -4,6 +4,7 @@ import logo from '../../assets/img/findfood-logo.png';
 import menu from '../../assets/Icons/menu.png';
 import { useState } from 'react';
 import close from '../../assets/Icons/close-24px.svg';
+import CartIcn from '../../assets/Icons/cart1.png';
 
 const Header = () => {
   const [menuList, setMenu] = useState(false);
@@ -41,6 +42,14 @@ const Header = () => {
             </li>
             <li className="btn" onClick={() => navigate(`/form`)}>
               TRY IT!
+            </li>
+            <li className="header__nav-list-cartLink">
+              <span>Cart</span>
+              <img
+                src={CartIcn}
+                alt="cart icon"
+                className="header__nav-list-cartLink-cart"
+              />
             </li>
           </ul>
         </nav>
@@ -94,6 +103,14 @@ const Header = () => {
                 }}
               >
                 TRY IT!
+              </li>
+              <li className="stickyNAv-list-cartLink">
+                <span>Cart</span>
+                <img
+                  src={CartIcn}
+                  alt="cart icon"
+                  className="stickyNAv-list-cartLink-cart"
+                />
               </li>
             </ul>
           </div>

@@ -25,8 +25,9 @@ html {
 
 body {
   font-family: "Rubik", sans-serif;
-  line-height: 1;
+  font-size: 1.8rem;
   font-weight: 400;
+  line-height: 1;
   color: #555;
 }
 
@@ -61,29 +62,94 @@ hr {
 }
 
 .btn {
-  padding: 1.6rem 3.2rem;
-  font-size: 1rem;
-  font-weight: 700;
   color: #fafafa;
   background-color: #e67e22;
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border: none;
   border-radius: 9px;
-  position: relative;
 }
 .btn:hover {
   cursor: pointer;
   background-color: #cf711f;
 }
-.btn-icon {
-  position: absolute;
-  left: 0.5rem;
-}
 
 .menuItem {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: white;
+  border-radius: 2rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
+  animation: menu 0.6s ease-out;
+}
+@keyframes menu {
+  from {
+    margin-left: -100px;
+  }
+  to {
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menuItem {
+    grid-template-columns: 5fr 1fr;
+    border-radius: 1rem;
+  }
+}
+.menuItem__txt {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  width: 100%;
+  border-radius: 2rem 2rem 0 0;
+  background-color: white;
+}
+@media screen and (min-width: 768px) {
+  .menuItem__txt {
+    border-radius: 0;
+    position: relative;
+    background-image: none;
+    border-radius: 2rem;
+    padding: 2rem 2rem;
+  }
+}
+.menuItem__txt-hAndPriceContainer {
+  display: flex;
   justify-content: space-between;
+  width: 100%;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .menuItem__txt-hAndPriceContainer {
+    margin-top: 0;
+  }
+}
+.menuItem__txt-h {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #45260a;
+}
+.menuItem__txt-ing, .menuItem__txt-price {
+  font-size: 1.4rem;
+}
+.menuItem__txt-ing .highlighted {
+  background-color: yellow;
+}
+.menuItem__txt-price {
+  align-self: flex-end;
+}
+.menuItem__img-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 2rem 2rem;
+}
+@media screen and (min-width: 768px) {
+  .menuItem__img-img {
+    border-radius: 0 1rem 1rem 0;
+  }
 }

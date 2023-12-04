@@ -2,6 +2,9 @@
 @use '../../styles/partials/mixins' as *;
 @use '../../styles/partials/globals' as *;
 
+// .tryPageback {
+//   background-color: #fdf2e9;
+// }
 .tryForm {
   display: grid;
   grid-template-columns: 1fr;
@@ -9,6 +12,7 @@
   box-shadow: 0 0 3rem rgba(0, 0, 0, 0.15);
   border-radius: 2rem;
   // background-image: linear-gradient(to right bottom, #eb984e, $btn-bg-color);
+
   overflow: hidden;
   @include tablet {
     grid-template-columns: 5fr 1fr;
@@ -175,4 +179,10 @@
     background-color: $btn-bg-color;
     color: $bg-color;
   }
+}
+.filteredDataContainer {
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

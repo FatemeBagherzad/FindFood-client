@@ -23,9 +23,9 @@ const TryForm = ({ menu }) => {
     }
 
     if (activeTab === 'prefer') {
-      setPreferContent([...preferContent, inputContent.trim()]);
+      setPreferContent([...preferContent, inputContent]);
     } else {
-      setAvoidContent([...avoidContent, inputContent.trim()]);
+      setAvoidContent([...avoidContent, inputContent]);
     }
 
     setInputContent('');
@@ -60,7 +60,7 @@ const TryForm = ({ menu }) => {
   };
 
   return (
-    <>
+    <div className="tryPageback">
       <section className="tryForm">
         <div className="tryForm-list">
           <h2 className="tryForm-list-heading">Choose ingrediantes!</h2>
@@ -172,8 +172,15 @@ const TryForm = ({ menu }) => {
         <div className="tryForm-imgbox"></div>
       </section>
 
-      {filteredData && <Menu menu={filteredData} highLights={highLights} />}
-    </>
+      <div className="filteredDataContainer">
+        {filteredData &&
+          (filteredData.length === 0 ? (
+            <h1>No dish found!!</h1>
+          ) : (
+            <Menu menu={filteredData} highLights={highLights} />
+          ))}
+      </div>
+    </div>
   );
 };
 export default TryForm;

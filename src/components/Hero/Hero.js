@@ -1,12 +1,12 @@
 import './Hero.scss';
 import { useNavigate } from 'react-router-dom';
+import heroImg from '../../assets/img/hero.png';
 import personImg1 from '../../assets/img/customers/customer-1.jpg';
 import personImg2 from '../../assets/img/customers/customer-2.jpg';
 import personImg3 from '../../assets/img/customers/customer-3.jpg';
 import personImg4 from '../../assets/img/customers/customer-4.jpg';
 import personImg5 from '../../assets/img/customers/customer-5.jpg';
 import personImg6 from '../../assets/img/customers/customer-6.jpg';
-import heroImg from '../../assets/img/hero.png';
 
 const Hero = () => {
   const navigate = useNavigate();
